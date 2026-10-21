@@ -1,0 +1,26 @@
+{
+    "geode": "4.0.0",
+    "gd": "2.2081",
+    "id": "he.dynamiccube",
+    "name": "Dynamic Cube",
+    "version": "1.0.0",
+    "developer": "He",
+    "description": "Buffers early cube jump presses and releases them on the first grounded physics frame.",
+    "settings": {
+        "enabled": {
+            "name": "Enabled",
+            "description": "Master toggle for the timing assist.",
+            "type": "bool",
+            "default": true
+        },
+        "early-window": {
+            "name": "Early Window",
+            "description": "How many frames early a click can be buffered before it is dropped.",
+            "type": "int",
+            "default": 4,
+            "min": 2,
+            "max": 8,
+            "control": { "slider": true }
+        }
+    }
+}
